@@ -30,11 +30,30 @@ let advice = [
     /*9*/ "Use sarcastically whenever anyone institutes a new policy that looks appealing on the surface but has negative repercussions.",
     /*10*/ "Use when a friend needs to be reminded to go with his or her gut feeling.",
     /*11*/ "Use whenever you are told a task cant be done.",
-    /*12*/ "Use when you move a chair",
+    /*12*/ "Use when you move a chair.",
     /*13*/ "Use to keep yourself or others focused.",
     /*14*/ "Use to cheer a pal up and remind him or her that every day brings new opportunities.",
-    /*15*/ "Use when one makes the right decision",
+    /*15*/ "Use when one makes the right decision.",
 ];
+
+let num = [
+    /*1*/ "1",
+    /*2*/ "2",
+    /*3*/ "3",
+    /*4*/ "4",
+    /*5*/ "5",
+    /*6*/ "6",
+    /*7*/ "7",
+    /*8*/ "8",
+    /*9*/ "9",
+    /*10*/ "10",
+    /*11*/ "11",
+    /*12*/ "12",
+    /*13*/ "13",
+    /*14*/ "14",
+    /*15*/ "15",
+];
+
 
 // combine quote and advice
 // commit changes to git 
@@ -44,5 +63,6 @@ btn.addEventListener('click', function () {
 
     var randomQuote = quotes[randomIndex];
     var randomAdvice = advice[randomIndex];
-    output.innerHTML = randomQuote + "<br>" + randomAdvice;
+    var randomNum = num[randomIndex];
+    output.innerHTML = randomNum + " - " + randomQuote + "<br>" + randomAdvice;
 })
